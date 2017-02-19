@@ -1,0 +1,34 @@
+<configuration debug="true">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy.MM.dd HH:mm:ss.SSS} - %p - Nevermind - %t - %m%n"
+            </pattern>
+        </encoder>
+    </appender>
+
+
+    <logger name="org.springframework">
+        <level value="info" />
+    </logger>
+
+    <logger name="org.thymeleaf">
+        <level value="debug" />
+    </logger>
+
+    <logger name="org.apache.cxf">
+        <level value="debug" />
+    </logger>
+
+    <logger name="org.hibernate">
+        <level value="debug" />
+    </logger>
+
+    <logger name="org.hibernate.type">
+        <level value="trace" />
+    </logger>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

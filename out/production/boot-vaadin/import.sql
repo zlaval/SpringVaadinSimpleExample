@@ -1,0 +1,1 @@
+insert into car (id,manufacturer,type,color,capacity) values (1,'Ford','Focus','Blue',1600);
