@@ -16,6 +16,7 @@ public class CarServiceImpl implements CarService {
     private CarRepository carRepository;
 
     @Override
+    @Transactional(readOnly = true)
     public List<Car> findAll() {
         return carRepository.findAll();
     }
@@ -30,8 +31,4 @@ public class CarServiceImpl implements CarService {
         carRepository.delete(car);
     }
 
-    @Override
-    public Car findOne(final Long id) {
-        return carRepository.findOne(id);
-    }
 }

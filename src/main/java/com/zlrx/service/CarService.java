@@ -12,6 +12,4 @@ public interface CarService {
 
     void delete(Car car);
 
-    Car findOne(Long id);
-
 }
