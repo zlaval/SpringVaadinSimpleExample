@@ -8,5 +8,4 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional(propagation = Propagation.MANDATORY)
 public interface CarRepository extends JpaRepository<Car, Long> {
 
-
 }

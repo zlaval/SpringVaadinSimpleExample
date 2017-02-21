@@ -66,7 +66,6 @@ public class CarUi extends UI {
         PopupDateField dateOfManufactureEditor = new PopupDateField();
         dateOfManufactureEditor.setConverter(dateToLocalDateConverter); //Vaadin 8-tól kidobható, a Java 8 új dátum idő apiját fogja használja
         grid.getColumn("dateOfManufacture").setConverter(stringToLocalDateConverter).setEditorField(dateOfManufactureEditor);
-
     }
 
     private void addButtonToCarGridHeader() {
